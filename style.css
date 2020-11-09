@@ -6,10 +6,15 @@
     box-sizing: border-box;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 .container{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .logo {
@@ -22,9 +27,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 70%;
-    margin: auto;
     text-align: center;
+    width: 60%;
 }
 
 .description {
@@ -35,6 +39,7 @@
 p {
     margin-top: 5%;
     font-size: 2vw;
+    
 }
 
 .newsletter{
@@ -55,7 +60,7 @@ p {
 /* TYPEWRITER */
 
 .title {
-    font-size: 3vh;
+    font-size: 3vw;
     width: auto;
     display: inline-block;
     font-family: 'IBM Plex Mono', monospace;
@@ -91,3 +96,33 @@ p {
 }
 
 
+
+@media (max-width: 750px) {
+    .main-content{
+        width: 80%;
+
+
+    }
+    p{
+        font-size: 4vw;
+        padding: 10px;
+    }
+    .title{
+        font-size: 4vh;
+    }
+    .newsletter-title{
+        font-size: 3vh;
+    }
+}
+
+@media (min-width: 1350px) {
+    p{
+        font-size: 1.5rem;
+    }
+    .title{
+        font-size: 2.3rem;
+    }
+    .newsletter-title{
+        font-size: 2.3rem;
+    }
+}
