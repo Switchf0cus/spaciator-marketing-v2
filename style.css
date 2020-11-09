@@ -100,8 +100,7 @@ p {
 @media (max-width: 450px) {
     .main-content{
         width: 80%;
-
-
+        margin-left: -10;
     }
     p{
         font-size: 1.2rem;
